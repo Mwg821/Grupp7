@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    position: sticky;
+    width: 100%;
+    padding: 3%;
+    text-align: center;
+    background: #475fac;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.header h2{
+    color: rgb(226, 229, 228);
+    margin: 2%;
+}
+
+.header h3{
+    color: coral;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.headermenu nav ul {
+    list-style: none;
+    display: inline-flex;
+    text-decoration-line: none;
+
+}
+
+.headermenu nav ul li {
+    padding: 1rem;
+
+}
+
+.headermenu nav ul li a:link, a:visited{
+    text-decoration: none;
+    display:inline-block;
+
+}
+
+.headermenu nav ul li a:hover, a.active {
+    background-color: rgb(231, 229, 225);
+    text-decoration: solid;
+
+}
