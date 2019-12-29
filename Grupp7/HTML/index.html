@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="#"> 
-    <link rel="stylesheet" href="#"> 
+    <link rel="stylesheet" href="/Grupp7/CSS/header.css"> 
+    <link rel="stylesheet" href="/Grupp7/CSS/slider.css"> 
 </head>
 <body>
     <header>
@@ -22,6 +22,63 @@
                 </nav>
             </div>
         </div>
+        
+        <div class="slider-container">
+
+            <div class="Slider ">
+              <div class="sidnummer">1 / 3</div>
+              <img src="/Grupp7/images/slider/fdg.jpg" style="width:100%">
+              
+            </div>
+            
+            <div class="Slider">
+              <div class="sidnummer">2 / 3</div>
+              <img src="/Grupp7/images/slider/jacket.jpg" style="width:100% ">
+              
+            </div>
+            
+            <div class="Slider">
+              <div class="sidnummer">3 / 3</div>
+              <img src="/Grupp7/images/slider/kattgarderob.jpg" style="width:100%  ">
+             
+            </div>
+            
+            </div>
+            
+            <br>
+            
+            <div style="text-align:center">
+            
+              <span class="dott"></span> 
+            
+              <span class="dott"></span>
+            
+              <span class="dott"></span> 
+            </div>
+            
+            
+                <script>
+               
+               var slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              var i;
+              var slides = document.getElementsByClassName("Slider");
+              var dots = document.getElementsByClassName("dott");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 2200); 
+            }     
+             </script>
     </header>
 </body>
 <footer>
