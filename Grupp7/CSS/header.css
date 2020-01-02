@@ -2,41 +2,62 @@
     margin: 0;
     padding: 0%;
     box-sizing: border-box;
+    
 }
 
 .header {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center; 
+    align-content: space-around;
     position: sticky;
+    height: 25vh;
     width: 100%;
-    padding: 3%;
     text-align: center;
     background: #475fac;
     color: white;
     font-size: 1.3rem;
+
 }
 
 .header h2{
     color: rgb(226, 229, 228);
-    margin: 2%;
+
 }
 
 .header h3{
     color: coral;
     font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.headermenu {
+    width: inherit;
+    height: inherit;
+    display: inline-flex;
+    width: inherit;
+    
 }
 
 .headermenu nav ul {
     list-style: none;
-    display: inline-flex;
     text-decoration-line: none;
-
+    display: inline-flex;
+    align-content: space-around;
+    
 }
 
 .headermenu nav ul li {
-    padding: 1rem;
+    width: inherit;
+    padding: 0rem;
+    align-items: center;
+    margin: 3%;
 
 }
+
 
 .headermenu nav ul li a:link, a:visited{
     text-decoration: none;
@@ -49,3 +70,54 @@
     text-decoration: solid;
 
 }
+
+.headerlinks{
+    width: inherit;
+    height: inherit;
+    display: inline-flex;
+    width: inherit;
+
+}
+
+div.headerlinks nav {
+    width: inherit;
+    height: inherit;
+    
+}
+
+div.headerlinks nav ul {
+    list-style: none;
+    text-decoration-line: none;
+    display: inline-flex;
+    align-content: space-around;
+    justify-content: start;
+    width: inherit;
+    height: inherit;
+    flex-wrap: wrap;
+    flex-direction: row;
+    overflow: hidden;
+
+}
+
+div.headerlinks nav ul li {
+    width: inherit;
+    padding: 0rem;
+    align-items: center;
+
+}
+
+div.headerlinks nav ul li a {
+
+    margin: 3%;
+}
+
+div.text{
+    display: inherit;
+    justify-content: start;
+    display: inline-flex;
+    width: inherit;
+    flex-wrap: wrap;
+
+}
+
+
